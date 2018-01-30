@@ -45,7 +45,7 @@ macro(build_BEAST install_prefix staging_prefix )
 #        -DLIBLBFGS_DIR:PATH=${LIBLBFGS_LIBRARY_DIR}
         -DOpenBLAS_DIR:PATH=${OpenBLAS_DIR}
         -DBUILD_TESTING:BOOL=${BUILD_TESTING}
-        -DUSE_NIFTI:BOOL=OFF
+        -DUSE_NIFTI:BOOL=ON
         -DMT_USE_OPENMP:BOOL=${MT_USE_OPENMP}
   )
   if(APPLE)
