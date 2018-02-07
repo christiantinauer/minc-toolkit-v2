@@ -1,11 +1,11 @@
 # FindNIFTI.cmake module
 
 
-FIND_PATH(NIFTI_INCLUDE_DIR nifti1_io.h /usr/include /usr/local/include /usr/local/bic/include)
+FIND_PATH(NIFTI_INCLUDE_DIR nifti1_io.h /usr/include /usr/local/include /usr/local/bic/include /usr/include/nifti)
 
 FIND_LIBRARY(NIFTI_LIBRARY NAMES niftiio PATHS /usr/lib /usr/local/lib /usr/local/bic/lib)
 
-FIND_PATH(ZNZ_INCLUDE_DIR znzlib.h /usr/include /usr/local/include /usr/local/bic/include)
+FIND_PATH(ZNZ_INCLUDE_DIR znzlib.h /usr/include /usr/local/include /usr/local/bic/include /usr/include/nifti)
 
 FIND_LIBRARY(ZNZ_LIBRARY NAMES znz PATHS /usr/lib /usr/local/lib /usr/local/bic/lib)
 
